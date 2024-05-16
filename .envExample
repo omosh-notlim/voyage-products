@@ -1,0 +1,15 @@
+// input DB_DIALECT and DB_DATABASE value as is below
+DB_DIALECT=postgres
+DB_DATABASE=greenvoyage
+
+// input local host if the db is in your local machine, else, 
+//   use the relevant ip
+DB_HOST=localhost
+
+// ensure your db is running on the port below, else, 
+//   use the relevant port number
+DB_PORT=5432
+
+// use your set username and password
+DB_USERNAME=postgres
+DB_PASSWORD=my-password
