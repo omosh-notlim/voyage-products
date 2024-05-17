@@ -54,3 +54,12 @@
         "unit_price_in_KES": 6199,
         "available_quantity": 4
     }
+
+    or
+
+    {
+        "product_name": "Canned beans",
+        "unit_of_measurement": "kgs",
+        "unit_price_in_KES": 400,
+        "available_quantity": 14
+    }
