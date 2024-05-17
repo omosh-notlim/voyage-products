@@ -3,11 +3,9 @@ DB_DIALECT=postgres
 DB_DATABASE=greenvoyage
 
 // input local host if the db is in your local machine, else, 
-//   use the relevant ip
-DB_HOST=localhost
+DB_HOST=node_db
 
 // ensure your db is running on the port below, else, 
-//   use the relevant port number
 DB_PORT=5432
 
 // use your set username and password
