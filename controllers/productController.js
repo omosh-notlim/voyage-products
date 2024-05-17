@@ -5,7 +5,7 @@ import Product from "../models/Product.js";
 export const addProduct = async (req, res, next) => {
     try {
         const product = await Product.create(req.body);
-        res.status(201).json(product);
+        res.status(201).json({message: 'Product created successfully.', product});
     } catch (error) {
         next(error);
     }
@@ -69,7 +69,7 @@ export const updateProduct = async (req, res, next) => {
                 where: {product_id: req.params.product_id},
             }
         );
-        res.status(200).json(updatedProduct[1]); 
+        res.status(200).json({message:'Product updated successfully.', updatedProduct[1]}); 
     } catch (error) {
         next(error);
     }
@@ -84,7 +84,7 @@ export const deleteProduct = async (req, res, next) => {
         await Product.destroy({
             where: { product_id: req.params.product_id },
         });
-        res.status(202).json({ message: 'Product deleted.' });
+        res.status(202).json({ message: 'Product deleted!' });
     } catch (error) {
         next(error);
     }
