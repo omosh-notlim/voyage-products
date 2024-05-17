@@ -50,11 +50,8 @@ export const getProduct = async (req, res, next) => {
     try {
         const product = await Product.findByPk(req.params.product_id);
         if (!product) return next(createError(404, "Product not found!"));
-        // if (!product) {
-        //     res.status(404).json({ error: 'Product not found!' });
-        // } else {
-            res.json(product);
-        // }
+
+        res.json(product);
     } catch (error) {
         next(error);
     }

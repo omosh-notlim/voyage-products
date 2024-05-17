@@ -16,6 +16,7 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// Routes
 app.use("/api/v1/products", productRouter);
 
 //error handler
