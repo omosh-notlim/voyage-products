@@ -17,8 +17,8 @@ services:
       - DB_USERNAME=${DB_USERNAME}
       - DB_PASSWORD=${DB_PASSWORD}
     restart: always
-    volumes:
-      - .:/usr/src/app
+    # volumes:
+    #   - .:/usr/src/app
 
   node_db:
     container_name: node_db
