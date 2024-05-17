@@ -69,7 +69,7 @@ export const updateProduct = async (req, res, next) => {
                 where: {product_id: req.params.product_id},
             }
         );
-        res.status(200).json({message:'Product updated successfully.', updatedProduct[1]}); 
+        res.status(200).json({message:'Product updated successfully.', updatedProduct: updatedProduct[1]});  
     } catch (error) {
         next(error);
     }
