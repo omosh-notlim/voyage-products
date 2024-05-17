@@ -3,22 +3,22 @@
 
 
 ###### File system breakdown:
-index.js -> the main file
-/models -> the model structure(ORM)
-/controllers -> holds the controller functions
-/routes -> defines all th routes
+    index.js -> the main file
+    /models -> the model structure(ORM)
+    /controllers -> holds the controller functions
+    /routes -> defines all th routes
 
-dbConnection.js -> the db connection
-error.js
+    dbConnection.js -> the db connection
+    error.js
 
-Dockerfile
-docker-compose.yml
+    Dockerfile
+    docker-compose.yml
 
-.env (
-    included to give you an easier time when installing & running the api; otherwise
-    would not be included
-)
-.gitignore
+    .env (
+        included to give you an easier time when installing & running the api; otherwise
+        would not be included
+    )
+    .gitignore
 
 
 ###### How to run
@@ -48,9 +48,9 @@ docker-compose.yml
 
 
 ###### sample body
-{
-  "product_name": "Flood light",
-  "unit_of_measurement": "count",
-  "unit_price_in_KES": 6199,
-  "available_quantity": 4
-}
+    {
+        "product_name": "Flood light",
+        "unit_of_measurement": "count",
+        "unit_price_in_KES": 6199,
+        "available_quantity": 4
+    }
