@@ -13,11 +13,6 @@
 
     Dockerfile
     docker-compose.yml
-
-    .env (
-        included to give you an easier time when installing & running the api; otherwise
-        would not be included
-    )
     .gitignore
 
 
