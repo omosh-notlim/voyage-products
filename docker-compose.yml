@@ -10,12 +10,10 @@ services:
     depends_on:
       - node_db
     environment:
-      - DB_DIALECT=postgres
       - DB_DATABASE=greenvoyage
       - DB_USERNAME=postgres
       - DB_PASSWORD=Password
       - DB_HOST=node_db
-      - DB_PORT=5432
     restart: always
     networks:
       - app-network
