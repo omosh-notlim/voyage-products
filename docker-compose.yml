@@ -10,12 +10,12 @@ services:
     depends_on:
       - node_db
     environment:
-      - DB_DIALECT=${DB_DIALECT}
-      - DB_HOST=${DB_HOST}
-      - DB_PORT=${DB_PORT}
-      - DB_DATABASE=${DB_DATABASE}
-      - DB_USERNAME=${DB_USERNAME}
-      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_DIALECT=postgres
+      - DB_HOST=node_db
+      - DB_PORT=5432
+      - DB_DATABASE=greenvoyage
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=Password
     restart: always
     networks:
       - app-network
@@ -24,9 +24,9 @@ services:
     container_name: node_db
     image: postgres:13
     environment:
-      POSTGRES_USER: ${DB_USERNAME}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-      POSTGRES_DB: ${DB_DATABASE}
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Password
+      - POSTGRES_DB=greenvoyage
     ports:
       - "5432:5432"
     volumes:
