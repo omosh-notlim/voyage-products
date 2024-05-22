@@ -20,6 +20,15 @@
     git clone https://github.com/omosh-notlim/voyage-products.git
     cd voyage-products
 
+    Method 1:
+    RUN: docker-compose --version
+    if missing:
+        RUN(in linux): sudo snap install docker
+    Then RUN:
+        docker-compose up -d node_db
+        docker-compose up --build
+    
+    Method 2:
     docker compose up -d node_db
     docker compose up --build
 
